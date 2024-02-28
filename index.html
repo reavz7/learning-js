@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarządzanie Zadaniami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zarządzanie Zadaniami</h1>
+        <form id="taskForm">
+            <input type="text" id="taskTitle" placeholder="Tytuł zadania" required>
+            <select id="taskType">
+                <option value="ZadanieDomowe">Zadanie Domowe</option>
+                <option value="Praca">Praca</option>
+                <option value="Hobby">Hobby</option>
+            </select>
+            <input type="text" id="taskDetails" placeholder="Szczegóły zadania">
+            <button type="submit">Dodaj Zadanie</button>
+        </form>
+        <div id="tasksList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
